@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <form action="#">
+    <h1>Formulário</h1>
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <div class="coolinput">
+        <label for="nome" class="text">Name:</label>
+        <input type="text" name="nome" id="nome" class="input">
+      </div>
+      <div class="coolinput">
+        <label for="sobrenome" class="text">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="sobrenome" class="input">
+      </div>
+      <div class="coolinput">
+        <label for="cpf" class="text">CPF:</label>
+        <input type="text" name="cpf" id="cpf" class="input">
+      </div>
+      <div class="coolinput">
+        <label for="nascimento" class="text">Nascimento:</label>
+        <input type="text" name="nascimento" id="nascimento" class="input">
+      </div>
+      <div class="radio-container">
+        <div class="radio-wrapper">
+          <label class="radio-button">
+            <input type="radio" name="radio-group" id="option1">
+            <span class="radio-checkmark"></span>
+            <span class="radio-label">Homem</span>
+          </label>
+        </div>
+
+        <div class="radio-wrapper">
+          <label class="radio-button">
+            <input type="radio" name="radio-group" id="option2">
+            <span class="radio-checkmark"></span>
+            <span class="radio-label">Mulher</span>
+          </label>
+        </div>
+
+    </fieldset>
+    <fieldset>
+      <legend>Contato</legend>
+      <div class="coolinput">
+        <label for="telefone" class="text">Telefone:</label>
+        <input type="text" name="telefone" id="telefone" class="input">
+      </div>
+      <div class="coolinput">
+        <label for="email" class="text">Email:</label>
+        <input type="text" name="email" id="email" class="input">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Endereço</legend>
+      <div class="coolinput">
+        <label for="rua" class="text">Rua:</label>
+        <input type="text" name="rua" id="rua" class="input" required>
+      </div>
+      <div class="coolinput">
+        <label for="numero" class="text">N°:</label>
+        <input type="text" name="numero" id="numero" class="input" required>
+      </div>
+      <div class="coolinput">
+        <label for="bairro" class="text">Bairro:</label>
+        <input type="text" name=" bairro" id="bairro" class="input" required>
+      </div>
+      <div class="coolinput">
+        <label for="cidade" class="text">Cidade:</label>
+        <input type="text" name="cidade" id="cidade" class="input" required>
+      </div>
+      <div class="coolinput">
+        <label for="estado" class="text">Estado:</label>
+        <input type="text" name="estado" id="estado" class="input" required>
+      </div>
+    </fieldset>
+    <div id="btnForm">
+      <button id="button1">
+        Enviar
+        <div class="arrow-wrapper">
+          <div class="arrow"></div>
+        </div>
+      </button>
+      <button id="button2" onclick="limpar()">
+        Limpar Formulário
+        <div class="arrow-wrapper">
+          <div class="arrow"></div>
+
+        </div>
+      </button>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
